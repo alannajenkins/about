@@ -13,3 +13,21 @@ describe( '#myFunction', function() {
 ```
 
 * If you want to mock, stub or spy on your test subjects use [sinon](sinonjs.org)
+
+
+### Version control
+
+When making a change to code, you should always increment the version in the ```package.json``` according to the guidelines set out in [http://semver.org/](http://semver.org/).
+
+#### Tagging
+
+When deploying code, we should always tag to create a *snapshot* (see [http://git-scm.com/book/en/Git-Basics-Tagging](http://git-scm.com/book/en/Git-Basics-Tagging).
+This way, we are always able to include our packages at a specific state, eg:
+
+```
+"dependencies": {
+	"elephant": "git+ssh://git@bitbucket.org/hxshortbreaks/elephant.git#0.0.1",
+	"lodash": "^2.4.1",
+	"q": "^1.0.1"
+}
+```
