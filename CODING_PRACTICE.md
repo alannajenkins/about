@@ -11,3 +11,5 @@ When writing in node.js, testing should use the following tools framework.
 ``` 
 describe( '#myFunction', function() {
 ```
+
+* If you want to mock, stub or spy on your test subjects use [sinon](sinonjs.org)
