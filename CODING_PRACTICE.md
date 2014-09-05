@@ -13,7 +13,7 @@ describe( '#myFunction', function() {
 ```
 
 * If you want to mock, stub or spy on your test subjects use [sinon](sinonjs.org)
-
+* To tidy up test files, json objects passed into a test should be stored separately in a `fixtures` directory and json objects checking expected outcomes shoudl be stored in an `expected` directory.
 
 ### Version control
 
