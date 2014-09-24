@@ -53,7 +53,7 @@ Enforce standards mode and more consistent rendering in every browser possible w
 ##Language attribute
 From the HTML5 spec:
 
-<blockquote>Authors are encouraged to specify a lang attribute on the root html element, giving the document's language. This aids speech synthesis tools to determine what pronunciations to use, translation tools to determine what rules to use, and so forth.</blockquote>
+> Authors are encouraged to specify a lang attribute on the root html element, giving the document's language. This aids speech synthesis tools to determine what pronunciations to use, translation tools to determine what rules to use, and so forth.
 
 Read more about the ```lang``` attribute [in the spec](http://www.w3.org/html/wg/drafts/html/master/semantics.html#the-html-element).
 Head to Sitepoint for a [list of language codes](http://reference.sitepoint.com/html/lang-codes).
@@ -137,13 +137,9 @@ Classes make for great reusable components, so they come first. Ids are more spe
 ##Boolean attributes
 A boolean attribute is one that needs no declared value. XHTML required you to declare a value, but HTML5 has no such requirement.
 For further reading, consult the [WhatWG section on boolean attributes](http://www.whatwg.org/specs/web-apps/current-work/multipage/common-microsyntaxes.html#boolean-attributes):
-<blockquote>
-  The presence of a boolean attribute on an element represents the true value, and the absence of the attribute represents the false value.
-</blockquote>
-If you ??must?? include the attribute's value, and *you don't need to*, follow this WhatWG guideline:
-<blockquote>
-  If the attribute is present, its value must either be the empty string or [...] the attribute's canonical name, with no leading or trailing whitespace.
-</blockquote>
+> The presence of a boolean attribute on an element represents the true value, and the absence of the attribute represents the false value.
+> If you ??must?? include the attribute's value, and *you don't need to*, follow this WhatWG guideline:
+> If the attribute is present, its value must either be the empty string or [...] the attribute's canonical name, with no leading or trailing whitespace.
 
 ```html
 <input type="text" disabled>
