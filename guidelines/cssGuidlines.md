@@ -1,4 +1,4 @@
-# LESS Coding Guidelines
+# CSS Coding Guidelines
 
 Shortbreaks uses a strict subset of [SASS](http://sass-lang.com/) for style generation. This subset includes variables and mixins, but nothing else (no nesting, etc.).
 
@@ -218,7 +218,7 @@ CSS blocks should be seperated by a single new line. not two. not 0.
 }
 ```
 
-A space should be before ``` { ``` in rule declarations, also line break after ``` { ``` and before ``` } ``` 
+A space should be before ``` { ``` in rule declarations, also line break after ``` { ``` and before ``` } ```
 
 **Right:**
 ```css
