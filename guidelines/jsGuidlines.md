@@ -152,7 +152,7 @@
 
 #### String literals
 
-  - Always `'` never `"`
+  - Always `'` never `"`, except when in a .json file.
   ```javascript
   // Right
   var string = 'text in single quotes';
