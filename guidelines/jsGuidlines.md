@@ -128,8 +128,8 @@
 
 #### Whitespace
 
-  - Always spaces, never tabs
-  - 4 spaces indents
+  - Always tabs, never space
+  - 1 tab indents
   - No trailing whitespace at end-of-line
 
   ```javascript
