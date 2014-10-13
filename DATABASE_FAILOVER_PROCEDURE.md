@@ -12,4 +12,4 @@ If we have unrecoverable database issues then the only way to get a database bac
 6. Once the database is accessible you can tell from the status on the "Instances" screen, grab the host name (Endpoint without the port number and comma) and go to Route53.
 7. Select the name of the service you need to change (if you are rebuilding the shortbreaksrds it will be rds-production.t-bob.co.uk).
 8. On the right hand side you will see the CName editor, for the value textbox replace the contents with your new host and click "Save Record Set".  If will take up to 5 minutes to propagate the changes.
-9. Fin
+9. Sit back and relax, the panic has been mitigated.
