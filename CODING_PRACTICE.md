@@ -34,7 +34,7 @@ This way, we are always able to include our packages at a specific state, eg:
 
 ### Sql
 
-## Some hard and fast rules for now
+#### Some hard and fast rules for now
 
 * Both table and column names shall be camel case.
 * Columns should be singlular
@@ -52,8 +52,10 @@ Not columns: product_id, product_name, created
 
 * When not using an ORM such as Idiorm/Sequelize, sql clauses should be written capitalising the keywords and broken on to multiple lines as follows:
 
+```
 SELECT id, name, isMale, createdAt
 FROM products
 WHERE name = 'test'
 ORDER BY id ASC
 LIMIT 10
+```
