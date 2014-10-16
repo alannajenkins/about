@@ -31,3 +31,29 @@ This way, we are always able to include our packages at a specific state, eg:
 	"q": "^1.0.1"
 }
 ```
+
+### Sql
+
+## Some hard and fast rules for now
+
+* Both table and column names shall be camel case.
+* Columns should be singlular
+* Table names should be plural
+* Enum should/should not be capitals?
+
+* Any columns within a table should be contextual i.e.
+
+Table: products
+Columns: id, name, createdAt
+Not columns: product_id, product_name, created 
+
+* Any datetime or timestamp type columns should be suffixed with 'At' or suffixed with 'Date', i.e. createdAt, modifiedDate
+* Any boolean/tinyInt type columns should be prefixed with 'is' i.e. isMale, isBackward
+
+* When not using an ORM such as Idiorm/Sequelize, sql clauses should be written capitalising the keywords and broken on to multiple lines as follows:
+
+SELECT id, name, isMale, createdAt
+FROM products
+WHERE name = 'test'
+ORDER BY id ASC
+LIMIT 10
