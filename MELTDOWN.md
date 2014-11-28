@@ -1,0 +1,24 @@
+## Post meltdown opportunity framework
+
+### tl:dr
+Something went badly wrong, here's what we're doing about it.
+
+When things go badly wrong, at the discretion of the team a session should be held the morning after the event (or as soon as all parties involved are available) to debrief and put in place measures to ensure greater business/systems integrity moving forward.
+
+Please discuss and document the incident below putting a copy in our [https://github.com/Shortbreaks/meltdown] repo.
+
+1. Date and time of incident.
+
+2. Names of parties involved.
+
+3. What factors led to the indicent ocurring?
+
+4. What happened? (Database fell over, service interrupted, production systems affected)
+
+5. What is the blast radius of the incident? (What broke, how much money was lost, how many customers affected etc)
+
+6. How could it have been avoided? (Better code review, additional test cases, change in procedure)
+
+7. What steps are being taken to avoid it happening again? (Individual tasks or personal objectives, jira's raised)
+
+8. What is being discussed/pushed back to the testing/automation teams to ensure increased safety?
