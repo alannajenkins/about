@@ -9,7 +9,7 @@ To read more about BEM, please see this [brilliant article](http://csswizardry.c
 
 * [JavaScript](#javascript)
 * [BEM](#BEM)
-	* [BEM Layout](#bemLayout)
+  * [BEM Layout](#bemLayout)
   * [blockName](#blockName)
   * [blockName\_\_elementName](#blockName__elementName)
   * [blockName--modifierName](#blockName--modifierName)
