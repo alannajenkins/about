@@ -20,7 +20,6 @@ To read more about BEM, please see this [brilliant article](http://csswizardry.c
 * [Formatting](#formatting)
   * [Spacing](#spacing)
   * [Quotes](#quotes)
-* [Performance](#performance)
   * [Specificity](#specificity)
 
 
@@ -44,10 +43,42 @@ Syntax: `<block>[__element|--modifier]`
 
 For the best understanding of BEM, either see the [Bem website here]() or read this article about [getting your head around BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
 
-You can think of block as custom elements that enclose specific semantics, styling, and behaviour.
+<a name="BEM layout"></a>
+### bemLayout
+
+Blocks, elements & modifiers should be linked together using SASS's parent selecter symbol ```&```
+
+**Right:**
+```csss
+nav[role=navigation] {
+}
+.nav {
+    &__list {
+      &__item {
+      }
+    }
+  &__link {
+    &--active {
+    }
+  }
+}
+```
+
+**Wrong:***
+```css
+.block {
+}
+.block__element {
+}
+.block--modifier {
+}
+
+```
 
 <a name="blockName"></a>
 ### blockName
+
+You can think of block as custom elements that enclose specific semantics, styling, and behaviour.
 
 The block's name must be written in camel case.
 
@@ -272,9 +303,6 @@ background-image: url(/img/you.jpg);
 font-family: Helvetica Neue Light, Helvetica Neue, Helvetica, Arial;
 ```
 
-<a name="performance"></a>
-## Performance
-
 <a name="specificity"></a>
 ### Specificity
 
@@ -299,6 +327,42 @@ If we want to only style specific `a` elements inside `.user-list` we can give t
 ```css
 .user-list > .link-primary:hover {
   color: red;
+}
+```
+
+Any selector that once compiled has more than 2 levels of nesting will fail a code review, for example:
+
+**Right:**
+
+```css
+.element .element-inner {
+	// stuff
+}
+```
+
+```css
+.element {
+	&-inner {
+		// stuff
+	}
+}
+```
+
+**Wrong:***
+
+```css
+.element .element-inner a {
+	// stuff
+}
+```
+
+```css
+.element {
+	&-inner {
+		a {
+			// stuff
+		}
+	}
 }
 ```
 
