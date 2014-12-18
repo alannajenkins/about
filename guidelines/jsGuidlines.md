@@ -165,7 +165,7 @@
 
  - Keys should never be quoted.
 ```
-var car = { 
+var car = {
     manyCars: {
         a: 'Saab',
         b: 'Jeep'
@@ -679,7 +679,7 @@ var car = {
 ### Require
 
   - Use uppercase variable names for imported modules
-  - All require statements must be declared at the top of the module
+  - All require statements *that are assigned to a variable* must be declared at the top of the module. It is acceptable to use require inline only if it is used once (like app.use middleware in express for example)
   - Always use relative paths
 
 ### Module globals
@@ -699,4 +699,4 @@ var car = {
   - First argument must always be `err`
   - If a function takes a `callback` argument, it **must** be called on `process.nextTick()`. Otherwise, the argument name **must** be `next` to clearly declare that it may get called on same tick
   - Callbacks should always be called with explicit `return`
-  
+
