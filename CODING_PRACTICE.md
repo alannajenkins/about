@@ -82,6 +82,7 @@ Not columns: product_id, product_name, created
 SELECT id, name, isMale, createdAt
 FROM products
 WHERE name = 'test'
+	AND isMale = 1
 ORDER BY id ASC
 LIMIT 10
 ```
