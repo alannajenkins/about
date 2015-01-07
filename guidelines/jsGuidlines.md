@@ -9,10 +9,10 @@
   - Always end statements with `;`
   ```javascript
   // Right
-  console.log('even when not required');
+  console.log( 'even when not required' );
 
   // Wrong
-  console.log('even when not required')
+  console.log( 'even when not required' )
   ```
 
 #### Variable declarations
@@ -34,15 +34,15 @@
   ```javascript
   // Right
 
-  if (condition) {
+  if( condition ) {
       return;
   }
 
   // Wrong
 
-  if (condition) return;
+  if( condition ) return;
 
-  if (condition)
+  if( condition )
       return;
   ```
 
@@ -58,8 +58,8 @@
 
   var name = 'john';
 
-  for (var i = 0, il = name.length; i < il; ++i) {
-      console.log(name[i]);
+  for( var i = 0, il = name.length; i < il; ++i ) {
+      console.log( name[i] );
   }
 
   // Wrong
@@ -67,8 +67,8 @@
   var position;
   var name = 'john' ;
 
-  for (position = 0; position < name.length; position++) {
-      console.log(name[position]) ;
+  for( position = 0; position < name.length; position++ ) {
+      console.log( name[position] ) ;
   }
   ```
 
@@ -89,10 +89,10 @@
 
       var self = this;
 
-      call(123, function (err) {
+      call( 123, function( err ) {
 
-          self.display(err);
-      });
+          self.display( err );
+      } );
   };
   ```
 
@@ -102,7 +102,7 @@
   ``` javascript
   // Right
 
-  var method = function () {
+  var method = function() {
 
   };
 
@@ -118,10 +118,10 @@
   - Use this.constructor === to check if a constructor function was called with new
   ```javascript
   // Right
-  Utils.assert(this.constructor === Server, 'Server must be instantiated using new');
+  Utils.assert( this.constructor === Server, 'Server must be instantiated using new' );
 
   // Wrong
-  Utils.assert(this instanceof Server, 'Server must be instantiated using new');
+  Utils.assert( this instanceof Server, 'Server must be instantiated using new' );
   ```
 
 ### Style
@@ -135,17 +135,17 @@
   ```javascript
   // Right
 
-  if (test) {
-      if (value === 12) {
-          console.log('result');
+  if( test ) {
+      if( value === 12 ) {
+          console.log( 'result');
       }
   }
 
   // Wrong
 
-  if (test) {
-    if (value === 12) {
-      console.log('result');
+  if( test ) {
+    if( value === 12 ) {
+      console.log( 'result' );
     }
   }
   ```
@@ -180,7 +180,7 @@ var car = {
 
   - Two empty lines between module functions or assignments (end of function to comment about next function)
   ```javascript
-  exports.get = function () {
+  exports.get = function() {
 
       // Some code
   };
@@ -189,7 +189,7 @@ var car = {
   /**
    * jsDoc comment
    */
-  internals.utility = function () {
+  internals.utility = function() {
 
       //Some code
   };
@@ -202,26 +202,26 @@ var car = {
   ```javascript
   // Right
 
-  if (condition) {
-      execute(value, { strict: true });
+  if( condition ) {
+      execute( value, { strict: true } );
   }
 
-  if (condition) {
+  if( condition ) {
       var options = {
           strict: true
       };
-      execute(value, options);
+      execute( value, options );
   }
 
   var empty = {};
 
   // Wrong
 
-  if (condition) { execute(value, { strict: true }); }
+  if( condition ) { execute(value, { strict: true }); }
 
-  if (condition) {
+  if( condition ) {
       var options = { strict: true };
-      execute(value, options);
+      execute( value, options );
   }
 
   var empty = {
@@ -230,7 +230,6 @@ var car = {
 
   - Newline after `}`
     - Only exception is when followed by `,`, `;`, `);` which must be followed by a newline
-    - Includes before `else`, `catch`, etc.
     - Empty line after `}` if not last statement in scope
 
   ```javascript
@@ -249,26 +248,26 @@ var car = {
 
           console.log(err);
       });
-  }
-  else {
+  } else {
       console.log('otherwise');
   }
 
   // Wrong
 
-  if (condition) {
+  if( condition ) {
       value = {
-          func: function () {
+          func: function() {
 
-              console.log('example');
+              console.log( 'example' );
           }, message: 'hello'
       };
-      execute(value, function (err) {
+      execute( value, function ( err ) {
 
-          console.log(err); }
+          console.log( err ); }
       );
-  } else {
-      console.log('otherwise');
+  }
+  else {
+      console.log( 'otherwise' );
   }
   ```
 
@@ -279,25 +278,25 @@ var car = {
   ```javascript
   // Right
 
-  exports.method = function () {
+  exports.method = function  () {
 
-      if (condition) {
-          if (otherCondition) {
-              console.log('sometimes');
+      if( condition ) {
+          if( otherCondition ) {
+              console.log( 'sometimes' );
           }
 
-          if (result &&
-              result.statusCode === 200) {
+          if( result &&
+              result.statusCode === 200 ) {
 
-              console.log('special case');
+              console.log( 'special case' );
           }
 
-          console.log('always');
+          console.log( 'always' );
       }
 
-      execute(123, function (err) {
+      execute( 123, function ( err ) {
 
-          console.log(err);
+          console.log( err );
       });
 
       var empty = {};
@@ -305,24 +304,24 @@ var car = {
 
   // Wrong
 
-  exports.method = function () {
-        if (condition) {
+  exports.method = function() {
+        if(condition) {
 
-          if (otherCondition) {
+          if( otherCondition ) {
 
-              console.log('sometimes');
+              console.log( 'sometimes' );
           }
 
-          if (result &&
-              result.statusCode === 200) {
-              console.log('special case');
+          if( result &&
+              result.statusCode === 200 ) {
+              console.log( 'special case' );
           }
 
-          console.log('always');
+          console.log( 'always' );
       }
 
-      execute(123, function (err) {
-          console.log(err);
+      execute( 123, function( err ) {
+          console.log( err );
       });
 
       var empty = {
@@ -334,17 +333,17 @@ var car = {
   ```javascript
   // Right
 
-  if (condition) {
-      if (otherCondition) {
-          console.log('done');
+  if( condition ) {
+      if( otherCondition ) {
+          console.log( 'done' );
       }
   }
 
   // Wrong
 
-  if (condition) {
-      if (otherCondition) {
-          console.log('done');
+  if( condition ) {
+      if( otherCondition ) {
+          console.log( 'done' );
 
       }
 
@@ -356,24 +355,24 @@ var car = {
   - Use one and only one space (when required)
   ```javascript
   // Right
-  var value = calculate(1, 3);
+  var value = calculate( 1, 3 );
 
   // Wrong
-  var  value =  calculate(1,  3);
+  var  value =  calculate(  1,  3  );
   ```
 
-  - One space between function and `(` when declaring a function
+  - No space between function and `(` when declaring a function
   ```javascript
   // Right
 
-  var example = function () {
+  var example = function() {
 
       return value;
   }
 
   // Wrong
 
-  var example = function() {
+  var example = function () {
 
       return value;
   }
@@ -390,22 +389,22 @@ var car = {
   var key = example ();
   ```
 
-  - No space after `(` or before `)`
+  - One space after `(` and before `)`
    ```javascript
   // Right
 
-  execute('order', 34);
+  execute( 'order', 34 );
 
-  if (result === 'ok') {
-      console.log('success');
+  if( result === 'ok' ) {
+      console.log( 'success' );
   }
 
   // Wrong
 
-  execute( 'order', 34 );
+  execute('order', 34);
 
-  if ( result === 'ok' ) {
-      console.log( 'success' );
+  if(result === 'ok') {
+      console.log('success');
   }
   ```
 
@@ -434,34 +433,34 @@ var car = {
 
   var name = 'john';
 
-  for (var i = 0, il = name.length; i < il; ++i) {
-      console.log(name[i]);
+  for( var i = 0, il = name.length; i < il; ++i ) {
+      console.log( name[i] );
   }
 
   // Wrong
 
   var name = 'john' ;
 
-  for (var i = 0, il = name.length;i < il ;++i) {
+  for(var i = 0, il = name.length;i < il ;++i) {
       console.log(name[i]) ;
   }
   ```
 
-  - Always space after reserved keywords (`if`, `else`, `for`, `return`, `function`, etc.)
+  - No space after reserved keywords (`if`, `else`, `for`, `return`, `function`, etc.)
   ```javascript
   // Right
 
-  for (var book in books) {
-      if (books.hasOwnProperty(book)) {
-          console.log(book.name);
+  for( var book in books ) {
+      if( books.hasOwnProperty( book ) ) {
+          console.log( book.name );
       }
   }
 
   // Wrong
 
-  for(var book in books) {
-      if(books.hasOwnProperty(book)) {
-          console.log(book.name);
+  for ( var book in books ) {
+      if (books.hasOwnProperty( book ) ) {
+          console.log( book.name );
       }
   }
   ```
@@ -475,22 +474,22 @@ var car = {
 
   var user = { name: 'john', email: 'john@example.com' };
   var empty = {};
-  var callback = function () { };
+  var callback = function() { };
 
   // Wrong
 
   var user = {name: 'john', email: 'john@example.com'};
   var empty = {  };
-  var callback = function () {};
+  var callback = function() {};
   ```
 
-  - No space after `[` and before `]` in inlined arrays
+  - One space after `[` and before `]` in inlined arrays
   ```javascript
   // Right
-  var numbers = [1, 2, 3];
+  var numbers = [ 1, 2, 3 ];
 
   // Wrong
-  var numbers = [ 1, 2, 3 ];
+  var numbers = [1, 2, 3];
   ```
 
   - Always space after `//`
@@ -506,11 +505,11 @@ var car = {
   ```javascript
   // Right
 
-  var numbers = [1, 2, 3];
+  var numbers = [ 1, 2, 3 ];
   var user = { name: 'john', email: 'john@example.com' };
 
-  for (var i = 0, il = name.length; i < il; ++i) {
-      console.log(name[i]);
+  for( var i = 0, il = name.length; i < il; ++i ) {
+      console.log( name[i] );
   }
 
   // Wrong
@@ -518,8 +517,8 @@ var car = {
   var numbers = [1,2 ,3];
   var user = { name: 'john',email: 'john@example.com' };
 
-  for (var i = 0,il = name.length; i < il; ++i) {
-      console.log(name[i]);
+  for( var i = 0,il = name.length; i < il; ++i ) {
+      console.log( name[i] );
   }
   ```
 
@@ -546,12 +545,12 @@ var car = {
   - Never begin a line with `,` (always at the end of the previous line)
   ```javascript
   // Right
-  execute('some error message',
+  execute( 'some error message',
           12345,
           this);
 
   // Wrong
-  execute('some error message'
+  execute( 'some error message'
           ,12345
           ,this);
   ```
@@ -566,10 +565,10 @@ var car = {
                 'Steve, ' +
                 'How are you?';
 
-  if (value === 'hello' &&
-      result === 'ok') {
+  if( value === 'hello' &&
+      result === 'ok' ) {
 
-      console.log('yes');
+      console.log( 'yes' );
   }
 
   // Wrong
@@ -578,10 +577,10 @@ var car = {
                 + 'Steve, '
                 + 'How are you?';
 
-  if (value === 'hello'
-      && result === 'ok') {
+  if( value === 'hello'
+      && result === 'ok' ) {
 
-      console.log('yes');
+      console.log( 'yes' );
   }
   ```
 
@@ -606,7 +605,7 @@ var car = {
       // Initialize state
       var position = 0;
 
-      if (condition) {
+      if( condition ) {
           // Return message
           return 'hello';
       }
@@ -623,12 +622,12 @@ var car = {
 
       // Print each book's name
 
-      for (var book in books) {
+      for( var book in books ) {
 
           // Check for valid properties
 
-          if (books.hasOwnProperty(book)) {
-              console.log(book.name);
+          if( books.hasOwnProperty( book ) ) {
+              console.log( book.name );
           }
       }
   }
@@ -640,12 +639,12 @@ var car = {
     - Appears immediately at the end of the line (or statement) it describes, following whitespace to separate it from code block
 
   ```javascript
-  function execute(value) {
+  function execute( value ) {
 
-      if (value !== null &&
-          value !== undefined) {      // Explicit check as 'value' can be 0
+      if( value !== null &&
+          value !== undefined ) {      // Explicit check as 'value' can be 0
 
-          console.log(value);
+          console.log( value );
       }
   }
   ```
@@ -660,11 +659,11 @@ var car = {
   - Conditions should be indented to the first character of the condition in the first line
 
   ```javascript
-  if (result &&
+  if( result &&
       result.status &&
-      result.status.statusCode === 200) {
+      result.status.statusCode === 200 ) {
 
-      console.log('success');
+      console.log( 'success' );
   }
   ```
 
