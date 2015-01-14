@@ -26,5 +26,4 @@ Each system should support the ability to select the environment it is running i
 - production
 
 ###Configuring on OpsWorks
-When running inside of an **AWS OpsWorks** stack, this can be configured in the environment variables for the desired **App**  
-<img style="width: 100%" src="assets/awsAppScreen.png" />
+When running inside of an **AWS OpsWorks** stack, this can be configured in the environment variables for the desired **App** . Full details available [here](http://docs.aws.amazon.com/opsworks/latest/userguide/workingapps-creating.html)
