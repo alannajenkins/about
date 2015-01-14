@@ -321,7 +321,7 @@ var car = {
 
 			execute( 123, function( err ) {
 					console.log( err );
-			});
+			} );
 
 			var empty = {
 			};
