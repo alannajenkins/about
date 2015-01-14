@@ -3,11 +3,11 @@ We should provide three environments to suit our deployment and testing process
 
 ### Development
 When working locally and developing.
-This should point to local copies of all conected systems
+This should point to local copies of all connected systems
 
 ### Staging
 That final step, where the work can be tested before releasing to the wild.
-This should point to staging versions of all conected systems
+This should point to staging versions of all connected systems
 
 ### Production
 The real deal, everything live and in front of customers.
