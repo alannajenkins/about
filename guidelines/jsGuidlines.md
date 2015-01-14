@@ -137,7 +137,7 @@
 
   if( test ) {
       if( value === 12 ) {
-          console.log( 'result');
+          console.log( 'result' );
       }
   }
 
@@ -217,7 +217,7 @@ var car = {
 
   // Wrong
 
-  if( condition ) { execute(value, { strict: true }); }
+  if( condition ) { execute(value, { strict: true } ); }
 
   if( condition ) {
       var options = { strict: true };
@@ -247,9 +247,9 @@ var car = {
       execute(value, function (err) {
 
           console.log(err);
-      });
+      } );
   } else {
-      console.log('otherwise');
+      console.log( 'otherwise' );
   }
 
   // Wrong
@@ -278,15 +278,14 @@ var car = {
   ```javascript
   // Right
 
-  exports.method = function  () {
+  exports.method = function () {
 
       if( condition ) {
           if( otherCondition ) {
               console.log( 'sometimes' );
           }
 
-          if( result &&
-              result.statusCode === 200 ) {
+          if( result && ( result.statusCode === 200 ) ) {
 
               console.log( 'special case' );
           }
@@ -297,7 +296,7 @@ var car = {
       execute( 123, function ( err ) {
 
           console.log( err );
-      });
+      } );
 
       var empty = {};
   };
@@ -441,7 +440,7 @@ var car = {
 
   var name = 'john' ;
 
-  for(var i = 0, il = name.length;i < il ;++i) {
+  for( var i = 0, il = name.length; i < il; ++i ) {
       console.log(name[i]) ;
   }
   ```
@@ -458,8 +457,8 @@ var car = {
 
   // Wrong
 
-  for ( var book in books ) {
-      if (books.hasOwnProperty( book ) ) {
+  for( var book in books ) {
+      if(books.hasOwnProperty( book ) ) {
           console.log( book.name );
       }
   }
@@ -583,6 +582,24 @@ var car = {
       console.log( 'yes' );
   }
   ```
+#### Brackets
+
+  - When writing logical operators in conditional statements they should always be surrounded by brackets to ensure order of execution.
+
+  // Right
+
+  ```javascript
+  if( ( a === b ) && ( c >= d ) ) {
+
+  }
+  ```
+
+  // Wrong
+  ```javascript
+  if( a === b && c >= d ) {
+
+  }
+  ```
 
 #### Comments
 
@@ -641,8 +658,7 @@ var car = {
   ```javascript
   function execute( value ) {
 
-      if( value !== null &&
-          value !== undefined ) {      // Explicit check as 'value' can be 0
+      if( ( value !== null ) && ( value !== undefined ) ) {      // Explicit check as 'value' can be 0
 
           console.log( value );
       }
@@ -655,7 +671,6 @@ var car = {
   - Break statements if they are longer than 150 characters long
   - No empty lines in the middle of a single statement
   - Indent multi-line statements
-
   - Conditions should be indented to the first character of the condition in the first line
 
   ```javascript
@@ -669,8 +684,8 @@ var car = {
 
   - Variable should be indented to the first character of the value in the first line
   ```javascript
-  var message = "hello" +
-                " and welcome";
+  var message = 'hello' +
+                '' and welcome';
   ```
 
 ## Node
