@@ -582,6 +582,32 @@ var car = {
       console.log( 'yes' );
   }
   ```
+
+#### Promises
+
+  - Always break promise chain statements onto separate lines
+  - All promises sit at the same level of indentation
+
+  // Right
+
+  ```javascript
+  function1()
+  .then( function2 )
+  .then( function3 )
+  .fail( function() {
+
+  } );
+  ```
+
+  // Wrong
+  ```javascript
+  function1().then( function2 )
+	  .then( function3 )
+	  .fail( function() {
+
+  	} );
+  ```
+
 #### Brackets
 
   - When writing logical operators in conditional statements they should always be surrounded by brackets to ensure order of execution.
@@ -606,8 +632,7 @@ var car = {
   - Always use `//` unless it's a jsDoc declaration or license header
   - Always begin sentences with an upper case
   - No trailing `.` unless comment contains multiple sentences
-  - Formal style, consistent voice, no humor, present tense
-  - No developer name or other personal notes
+  - Include your name if it adds value to the comment
   - No TODOs
 
   - Line
