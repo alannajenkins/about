@@ -586,26 +586,26 @@ var car = {
 #### Promises
 
   - Always break promise chain statements onto separate lines
-  - All but the first promise must be indented by 1 tab
+  - All promises sit at the same level of indentation
 
   // Right
 
   ```javascript
   function1()
-    .then( function2 )
-    .then( function3 )
-    .fail( function() {
+  .then( function2 )
+  .then( function3 )
+  .fail( function() {
 
-    } );
+  } );
   ```
 
   // Wrong
   ```javascript
   function1().then( function2 )
-  .then( function3 )
-  .fail( function() {
+	  .then( function3 )
+	  .fail( function() {
 
-  } );
+  	} );
   ```
 
 #### Brackets
