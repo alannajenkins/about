@@ -16,7 +16,6 @@
 	"requireSpaceAfterKeywords": [ "else", "return", "try", "catch" ],
 	"disallowSpaceAfterKeywords": [ "if" ],
 	"requireParenthesesAroundIIFE": true,
-	"requireSpacesInsideObjectBrackets": "all",
 	"disallowSpacesInFunctionExpression": {
 		"beforeOpeningRoundBrace": true
 	},
