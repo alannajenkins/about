@@ -39,10 +39,13 @@
 	"disallowTrailingComma": true,
 	"disallowYodaConditions": true,
 	"requireCamelCaseOrUpperCaseIdentifiers": true,
-	"requireCapitalizedComments": true,
 	"requireCapitalizedConstructors": true,
 	"requireCommaBeforeLineBreak": true,
 	"requireSpaceBeforeBlockStatements": true,
+	"requireSpaceBeforeObjectValues": true,
 	"requireSpacesInsideObjectBrackets": "all",
-	"requireSpacesInsideParentheses": "all"
+	"requireSpacesInsideArrayBrackets": "all",
+	"requireSpacesInsideParentheses": "all",
+	"requireSpaceAfterLineComment": true,
+	"validateQuoteMarks": "'",
 }
