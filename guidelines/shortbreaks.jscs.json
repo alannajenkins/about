@@ -41,9 +41,10 @@
 	"requireCamelCaseOrUpperCaseIdentifiers": true,
 	"requireCapitalizedConstructors": true,
 	"requireCommaBeforeLineBreak": true,
-	"requireSpaceBeforeObjectValues": true,
 	"requireSpaceBeforeBlockStatements": true,
+	"requireSpaceBeforeObjectValues": true,
 	"requireSpacesInsideObjectBrackets": "all",
 	"requireSpacesInsideArrayBrackets": "all",
-	"requireSpacesInsideParentheses": "all"
+	"requireSpacesInsideParentheses": "all",
+	"validateQuoteMarks": "'",
 }
