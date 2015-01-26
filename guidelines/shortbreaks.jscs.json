@@ -39,7 +39,6 @@
 	"disallowTrailingComma": true,
 	"disallowYodaConditions": true,
 	"requireCamelCaseOrUpperCaseIdentifiers": true,
-	"requireCapitalizedComments": true,
 	"requireCapitalizedConstructors": true,
 	"requireCommaBeforeLineBreak": true,
 	"requireSpaceBeforeBlockStatements": true,
