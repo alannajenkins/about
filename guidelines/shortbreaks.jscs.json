@@ -44,5 +44,6 @@
 	"requireSpaceBeforeObjectValues": true,
 	"requireSpaceBeforeBlockStatements": true,
 	"requireSpacesInsideObjectBrackets": "all",
+	"requireSpacesInsideArrayBrackets": "all",
 	"requireSpacesInsideParentheses": "all"
 }
