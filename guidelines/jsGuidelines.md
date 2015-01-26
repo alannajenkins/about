@@ -634,7 +634,6 @@ var car = {
   - No trailing `.` unless comment contains multiple sentences
   - Include your name if it adds value to the comment
   - No TODOs
-
   - Line
     - Provides narrative for the following single code line (or single statement broken for readability)
     - One line of comment only
