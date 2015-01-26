@@ -46,5 +46,6 @@
 	"requireSpacesInsideObjectBrackets": "all",
 	"requireSpacesInsideArrayBrackets": "all",
 	"requireSpacesInsideParentheses": "all",
+	"requireSpaceAfterLineComment": true,
 	"validateQuoteMarks": "'",
 }
