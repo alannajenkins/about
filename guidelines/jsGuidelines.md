@@ -1,5 +1,7 @@
 # Coding Conventions
 
+If you want our jscsrc.json and jshintrc.json then you can install [make-up](https://github.com/holidayextras/make-up) which has them packaged inside.
+
 ## JavaScript
 
 ### Language
