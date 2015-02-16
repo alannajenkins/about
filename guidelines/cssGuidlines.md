@@ -1,5 +1,7 @@
 # CSS Coding Guidelines
 
+If you want our scss-lint.yml then you can install [make-up](https://github.com/holidayextras/make-up) which has it packaged inside.
+
 Shortbreaks uses a strict subset of [SASS](http://sass-lang.com/) for style generation. This subset includes variables and mixins, but nothing else (no nesting, etc.).
 
 Shortbreak's use the [BEM](http://bem.info/) syntax for naming conventions and creating morem odular code.
