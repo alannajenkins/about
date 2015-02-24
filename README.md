@@ -13,4 +13,4 @@ For all configs that enforce these guidlines, you can install [make-up](https://
 * [CSS](https://github.com/Shortbreaks/about/blob/master/guidelines/cssGuidlines.md)
 
 # Checklists
-* [Pull request template](https://github.com/Shortbreaks/about/blob/master/checklists/prTemplate.md)
+* [Pull request template](https://github.com/Shortbreaks/about/blob/master/prTemplate.md)
