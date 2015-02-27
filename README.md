@@ -7,7 +7,7 @@ All about Holiday Extras Shortbreaks
 
 For all configs that enforce these guidlines, you can install [make-up](https://github.com/holidayextras/make-up) which has them packaged inside.
 
-* [Coding Practice](https://github.com/Shortbreaks/about/blob/master/CODING_PRACTICE.md)
+* [Coding Practice](https://github.com/Shortbreaks/about/blob/master/codingPractice.md)
 * [HTML](https://github.com/Shortbreaks/about/blob/master/guidelines/htmlGuidlines.md)
 * [JS](https://github.com/Shortbreaks/about/blob/master/guidelines/jsGuidlines.md)
 * [CSS](https://github.com/Shortbreaks/about/blob/master/guidelines/cssGuidlines.md)
