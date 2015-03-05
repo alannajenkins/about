@@ -1,7 +1,7 @@
 #### What are the links to relevant tickets?
 #### What does this PR do?
 #### What unit tests does this PR have?
-#### How should a developer review this? 
+#### How should a developer review this?
 #### Any background context you want to provide?
 #### Screenshots (if appropriate)
 ---
@@ -19,6 +19,7 @@
 - [ ] I’ve checked for appropriate test coverage.
 - [ ] I’ve checked for coding anti-patterns.
 - [ ] I've checked this work against the requirements of the Jira.
+- [ ] I don’t believe this work introduces unnecessary technical debt.
 - [ ] +1 from me!
 
 #### Reviewer 2
@@ -27,5 +28,6 @@
 - [ ] I’ve witnessed the tests running succesfully.
 - [ ] I’ve checked for appropriate test coverage.
 - [ ] I’ve checked for coding anti-patterns.
+- [ ] I've checked this work against the requirements of the Jira.
 - [ ] I don’t believe this work introduces unnecessary technical debt.
 - [ ] +1 from me!
