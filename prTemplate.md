@@ -1,6 +1,6 @@
 #### What are the links to relevant tickets?
 #### What does this PR do?
-#### What tests does this PR have?
+#### What functional/unit tests does this PR have?
 #### How should a developer review this?
 #### Any background context you want to provide?
 #### Screenshots (if appropriate)
