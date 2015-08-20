@@ -8,8 +8,8 @@
 #### Quality checklist (for PR author to complete BEFORE code review):
 - [ ] I've checked there is appropriate unit test coverage.
 - [ ] I've updated documentation with any changes to procedures.
-- [ ] This change passes all necessary tests (cross browser, automated or otherwise).
 - [ ] I've checked this work against the requirements of the Jira.
+- [ ] This change passes all necessary tests (cross browser, automated or otherwise).
 - [ ] I am ready for this to be code reviewed, merged and tested.
 
 #### Reviewer 1
