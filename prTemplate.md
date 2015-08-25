@@ -8,14 +8,13 @@
 #### Quality checklist (for PR author to complete BEFORE code review):
 - [ ] I've checked there is appropriate unit test coverage.
 - [ ] I've updated documentation with any changes to procedures.
-- [ ] I've tested this cross browser for any visual changes.
 - [ ] I've checked this work against the requirements of the Jira.
+- [ ] This change passes all necessary tests (cross browser, automated or otherwise).
 - [ ] I am ready for this to be code reviewed, merged and tested.
 
 #### Reviewer 1
 - [ ] I agree with the assumptions made in the quality checklist.
 - [ ] I’ve witnessed the work behaving as expected.
-- [ ] I’ve witnessed the tests running successfully.
 - [ ] I’ve checked for appropriate test coverage.
 - [ ] I’ve checked for coding anti-patterns.
 - [ ] I've checked this work against the requirements of the Jira.
@@ -25,7 +24,6 @@
 #### Reviewer 2
 - [ ] I agree with the assumptions made in the quality checklist.
 - [ ] I’ve witnessed the work behaving as expected.
-- [ ] I’ve witnessed the tests running successfully.
 - [ ] I’ve checked for appropriate test coverage.
 - [ ] I’ve checked for coding anti-patterns.
 - [ ] I've checked this work against the requirements of the Jira.
