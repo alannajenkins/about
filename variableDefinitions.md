@@ -30,12 +30,11 @@ atg
 
 ###### examples
 
-legoland (potential source in Revolver: legoland)
-altonCom (alton)
-altonBreaks (alton)
-chessington (chessington)
-paultons (paultons)
-peppa (paultons)
-thorpe (thorpe)
-atg (atg)
-atgDevelopment (atg)
+`legoland` (potential source in Revolver: legoland)
+`altonCom` (alton)
+`altonBreaks` (alton)
+`chessington` (chessington)
+`paultons` (paultons) note: peppa pig refers as `paultons`
+`thorpe` (thorpe)
+`atg` (atg)
+`atgDevelopment` (atg)
