@@ -4,9 +4,9 @@
 - used as a reference to a specific 3rd party
 
 ###### examples
-operaWebServices
-chauntry
-atg
+`operaWebServices`
+`chauntry`
+`atg`
 
 ### sources
 
@@ -15,12 +15,12 @@ atg
 
 ###### examples
 
-legoland
-alton
-paultons
-chessington
-thorpe
-atg
+`legoland`
+`alton`
+`paultons`
+`chessington`
+`thorpe`
+`atg`
 
 ### referrers - who the domain is pretending to be
 
